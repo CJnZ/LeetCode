@@ -10,12 +10,12 @@ public:
             it = m.find(another);
             if(it == m.end())   // 没找到，加入缓冲区
             {
-                m.insert(make_pair(nums[i], i+1));
+                m.insert(make_pair(nums[i], i));//Here
             }
             else
             {
                 result.push_back(it->second);
-                result.push_back(i+1);
+                result.push_back(i);
                 break;
             }
         }
